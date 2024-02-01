@@ -4,12 +4,32 @@
     <link rel="stylesheet" href="msj.css">
     <title>MSJ</title>
     <style>
-        /* Style for the dropdown menu */
+        /* Existing styles */
+        body {
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        iframe {
+            margin-bottom: 20px;
+        }
+
+        /* Hamburger icon and Dropdown menu styles */
         .dropdown {
-            position: absolute;
-            top: 10px;
-            left: 10px;
+            position: relative;
             display: inline-block;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .hamburger {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
         }
 
         .dropdown-content {
@@ -19,10 +39,22 @@
             min-width: 160px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             z-index: 1;
+            text-align: left;
         }
 
         .dropdown:hover .dropdown-content {
             display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
@@ -34,9 +66,9 @@
         <h2>Recent shock in the community 😱</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6IdfPtbHUP8?si=gsjSNQLKbkx0AK-e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <!-- Dropdown menu with About MSJ button -->
+        <!-- Hamburger icon and Dropdown menu -->
         <div class="dropdown">
-            <button>About MSJ</button>
+            <button class="hamburger">&#9776;</button>
             <div class="dropdown-content">
                 <a href="about.html">About MSJ</a>
             </div>
