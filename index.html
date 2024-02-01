@@ -3,6 +3,28 @@
 <head>
     <link rel="stylesheet" href="msj.css">
     <title>MSJ</title>
+    <style>
+        /* Style for the dropdown menu */
+        .dropdown {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <center>
@@ -12,7 +34,13 @@
         <h2>Recent shock in the community 😱</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6IdfPtbHUP8?si=gsjSNQLKbkx0AK-e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <a href="about.html"><button>About MSJ</button></a>
+        <!-- Dropdown menu with About MSJ button -->
+        <div class="dropdown">
+            <button>About MSJ</button>
+            <div class="dropdown-content">
+                <a href="about.html">About MSJ</a>
+            </div>
+        </div>
     </center>
 </body>
 </html>
