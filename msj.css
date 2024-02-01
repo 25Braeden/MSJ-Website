@@ -5,7 +5,9 @@ body {
 	background-color: #BCAD75;
 	text-align: center; /* Moved from the second block */
 }
-
+h1, h2 {
+	color:#63305E
+}
 .dropdown-content h1,
 .dropdown-content h2 {
     color: #333;
